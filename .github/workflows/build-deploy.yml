@@ -1,0 +1,38 @@
+name: Build & Deploy
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v2
+      - name: pdflatex Plantilla_Reporte_Investigacion_100952
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: Plantilla_Reporte_Investigacion_100952.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: bibtex Plantilla_Reporte_Investigacion_100952
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: Plantilla_Reporte_Investigacion_100952
+          compiler: bibtex
+          args: 
+      - name: pdflatex Plantilla_Reporte_Investigacion_100952
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: Plantilla_Reporte_Investigacion_100952.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: Prepare for Deploy
+        run: |
+          mkdir build
+          mv Plantilla_Reporte_Investigacion_100952.pdf build/reporte-investigacion.pdf
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: pdf-generation
+          folder: build

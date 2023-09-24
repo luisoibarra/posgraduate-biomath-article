@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.0 (13/4/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fleqn,10pt]{SelfArx_063318} % Document font size and equations flushed left
+ 
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Evaluaci\'{o}n Final Biomat} % Journal information
+\Archive{Actualizado 14-06-2023} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Análisis de Heterogeneidad Espacial en Modelos Epidemiológicos}
+
+\Authors{Luis Ernesto Ibarra Vázquez\textsuperscript{1}}
+\affiliation{\textsuperscript{1}\textit{Centro de Neurociencias de Cuba, La Habana, Cuba, luisernesto.ibarra@cneuro.edu.cu, luise98cu@gmail.com}} % Author affiliation
+%\affiliation{*\textbf{Autor para Correspondencia, Corresponding Author}} % Corresponding author
+
+\Keywords{,,} % Keywords - if you don't want any simply remove all the text between the curly brackets
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\Abstract{M\'{a}ximo 200 palabras}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+
+\maketitle % Print the title and abstract box
+
+%\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section*{Reporte de investigaci\'{o}n} % The \section*{} command stops section numbering
+M\'{a}ximo 10 cuartillas
+\cite{mainPresentation}
+El reporte debe contar con 
+\section{Introducci\'{o}n}
+\section{Desarrollo}
+Esta secci\'{o}n puede tener otro nombre y estar estructurada en 
+\subsection{Nombre de una subsecci\'{o}n}
+\section{Conclusiones}
+\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+
+
+
+%\begin{figure}[h!]
+%	\centering
+%		\includegraphics[width=10cm]{}%
+%		\caption{}
+%\end{figure}
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+\phantomsection
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
