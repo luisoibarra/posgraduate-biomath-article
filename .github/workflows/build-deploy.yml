@@ -27,6 +27,12 @@ jobs:
           root_file: Plantilla_Reporte_Investigacion_100952.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
+      - name: pdflatex Plantilla_Reporte_Investigacion_100952
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: Plantilla_Reporte_Investigacion_100952.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
       - name: Prepare for Deploy
         run: |
           mkdir build
