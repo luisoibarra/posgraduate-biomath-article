@@ -91,24 +91,24 @@ la biología.
 \section*{Reporte de investigación} % The \section*{} command stops section numbering
 \section{Introducción}
 
-La Biomatemática es un campo interdisciplinario que aplica principios matemáticos y computacionales para modelar y 
-analizar sistemas biológicos complejos. Esta integración de biología, estadística y modelado matemático busca 
-entender y hacer predicciones sobre organismos vivos y sus interacciones. Mediante el desarrollo de modelos 
-cuantitativos, la Biomatemática ayuda a revelar relaciones y patrones difíciles de detectar solo con experimentación 
+La Biomatemática es un campo interdisciplinario que aplica principios matemáticos y computacionales para modelar y
+analizar sistemas biológicos complejos. Esta integración de biología, estadística y modelado matemático busca
+entender y hacer predicciones sobre organismos vivos y sus interacciones. Mediante el desarrollo de modelos
+cuantitativos, la Biomatemática ayuda a revelar relaciones y patrones difíciles de detectar solo con experimentación
 biológica.
 
-La heterogeneidad espacial es un fenómeno común en sistemas biológicos y ecológicos. Se refiere a la variación en las 
-propiedades de un sistema a través del espacio, como diferencias en la densidad de población, distribución de recursos, 
-o condiciones ambientales. Modelar matemáticamente esta heterogeneidad espacial puede proporcionar información valiosa 
+La heterogeneidad espacial es un fenómeno común en sistemas biológicos y ecológicos. Se refiere a la variación en las
+propiedades de un sistema a través del espacio, como diferencias en la densidad de población, distribución de recursos,
+o condiciones ambientales. Modelar matemáticamente esta heterogeneidad espacial puede proporcionar información valiosa
 sobre los procesos subyacentes y la dinámica de estos sistemas.
 
 La habilidad de representar adecuadamente la heterogeneidad espacial puede mejorar significativamente la
-comprensión de patrones y procesos en ecología, epidemiología y evolución. Los modelos desarrollados en este campo 
-tendrán aplicaciones para problemas importantes como la propagación de enfermedades infecciosas y la dinámica de 
+comprensión de patrones y procesos en ecología, epidemiología y evolución. Los modelos desarrollados en este campo
+tendrán aplicaciones para problemas importantes como la propagación de enfermedades infecciosas y la dinámica de
 metapoblaciones.
 
 En el reporte se mencionan algunas de las maneras que existen en la literatura para el modelado y análisis de
-modelos y variables que toman en cuenta la heterogeneidad espacial. Se mencionan pasos a tener en cuenta para la 
+modelos y variables que toman en cuenta la heterogeneidad espacial. Se mencionan pasos a tener en cuenta para la
 confección de este tipo de modelos.
 
 \section{Desarrollo}
@@ -166,15 +166,15 @@ que incluyan la heterogeneidad espacial en su definición.
 
 \begin{enumerate}
     \item Captura la dinámica compleja de los sistemas del mundo real.
-    \item Representación más realista de las interacciones y 
-    propagación de fenómenos en diferentes regiones o ubicaciones.
-    \item Reconoce que las poblaciones, los entornos y los comportamientos varían espacialmente, lo que resulta en 
-    patrones diversos de transmisión de enfermedades, dinámica de poblaciones y otros fenómenos.
-    \item Tiene en cuenta factores localizados como la densidad de población, la conectividad, la movilidad, 
-    que influyen en la dinámica y los resultados de varios procesos.
-    \item Permite una comprensión más profunda de los impactos de la estructura espacial en el comportamiento 
-    del sistema, lo que facilita predicciones más precisas, intervenciones específicas y una formulación de 
-    políticas efectiva.
+    \item Representación más realista de las interacciones y
+          propagación de fenómenos en diferentes regiones o ubicaciones.
+    \item Reconoce que las poblaciones, los entornos y los comportamientos varían espacialmente, lo que resulta en
+          patrones diversos de transmisión de enfermedades, dinámica de poblaciones y otros fenómenos.
+    \item Tiene en cuenta factores localizados como la densidad de población, la conectividad, la movilidad,
+          que influyen en la dinámica y los resultados de varios procesos.
+    \item Permite una comprensión más profunda de los impactos de la estructura espacial en el comportamiento
+          del sistema, lo que facilita predicciones más precisas, intervenciones específicas y una formulación de
+          políticas efectiva.
 \end{enumerate}
 
 \subsection{Modelación con heterogeneidad espacial}
@@ -184,26 +184,26 @@ en los puntos propuestos en \cite{mainPresentation}.
 
 \begin{enumerate}
     \item Definir las distintas metapoblaciones.
-    \begin{itemize}
-        \item Deben estar separadas por conjuntos que tengan elementos con características similares.
-        \item Los elementos del conjunto deben de interactuar de manera similar con otros conjuntos.
-    \end{itemize}
+          \begin{itemize}
+              \item Deben estar separadas por conjuntos que tengan elementos con características similares.
+              \item Los elementos del conjunto deben de interactuar de manera similar con otros conjuntos.
+          \end{itemize}
     \item Definir esquema de separación.
-    \begin{itemize}
-        \item Cada área se debe de poder comportar como un subsistema que interactua con las demás. 
-        \item Ejemplos: Grafos, retículas.
-    \end{itemize}
+          \begin{itemize}
+              \item Cada área se debe de poder comportar como un subsistema que interactua con las demás.
+              \item Ejemplos: Grafos, retículas.
+          \end{itemize}
     \item Definir intercambio entre los compartimentos definidos.
-    \begin{itemize}
-        \item ¿Cómo se realiza el intercambio entre distintos compartimentos?
-        \item Ejemplos: Movimiento euleriano, movimiento lagrangiano, reglas de difusión.
-    \end{itemize}
+          \begin{itemize}
+              \item ¿Cómo se realiza el intercambio entre distintos compartimentos?
+              \item Ejemplos: Movimiento euleriano, movimiento lagrangiano, reglas de difusión.
+          \end{itemize}
     \item Seleccionar y aplicar modelo de dinámica de epidemia al esquema propuesto.
-    \begin{itemize}
-        \item El modelo seleccionado debe tener en cuenta las interacciones entre los elementos de cada
-        compartimento de manera individual y su intercambio con otras.
-        \item Ejemplos: SIR, reglas de transición. 
-    \end{itemize}
+          \begin{itemize}
+              \item El modelo seleccionado debe tener en cuenta las interacciones entre los elementos de cada
+                    compartimento de manera individual y su intercambio con otras.
+              \item Ejemplos: SIR, reglas de transición.
+          \end{itemize}
 \end{enumerate}
 
 \subsubsection{Ejemplos de modelos}
@@ -216,35 +216,55 @@ en los puntos propuestos en \cite{mainPresentation}.
 
 \subsubsection{Usos prácticos de heterogeneidad espacial}
 
-En \cite{guinovart2021multi} se estudia la propagación de la COVID-19 en Cuba. En este se sigue el patrón anterior al 
+En \cite{guinovart2021multi} se estudia la propagación de la COVID-19 en Cuba. En este se sigue el patrón anterior al
 dividir las poblaciones en dos grupos principales,
-las regiones de La Habana y los regiones fuera de La Habana, con el objetivo de identificar las dinámicas de 
-transmisión entre zonas urbanas densamente pobladas y el resto de la isla. El esquema de intercambio entre poblaciones 
+las regiones de La Habana y los regiones fuera de La Habana, con el objetivo de identificar las dinámicas de
+transmisión entre zonas urbanas densamente pobladas y el resto de la isla. El esquema de intercambio entre poblaciones
 se vio reflejado los parámetros del modelo indicando por una taza de cambio a estimar. Para las poblaciones localizadas
 se modeló la transmisión con un esquema SEIR generalizado y además se tomó en cuenta el proceso de vacunación mediante
-un modelo SEIQRDPV. Este trabajo contribuyó a comprender mejor el papel de la densidad de población, la movilidad y las 
+un modelo SEIQRDPV. Este trabajo contribuyó a comprender mejor el papel de la densidad de población, la movilidad y las
 intervenciones y permitir un análisis y una respuesta a la pandemia más específicos.
 
-El artículo \cite{li2022geographical} analiza la distribución geográfica y factores de influencia en los casos de 
-COVID-19 en China. Utiliza varios indicadores socioeconómicos y ambientales para modelar la 
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=10cm]{images/exchange-diagram-guino.png}%
+		\caption{Diagrama de intercambio entre metapobalciones.}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=10cm]{images/predictions-guino.png}%
+		\caption{Predicciones del estudio en las diferentes metapoblaciones.}
+\end{figure}
+
+
+El artículo \cite{li2022geographical} analiza la distribución geográfica y factores de influencia en los casos de
+COVID-19 en China. Utiliza varios indicadores socioeconómicos y ambientales para modelar la
 influencia de factores como construcción urbana, PIB y emisiones industriales en la cantidad de pacientes y fallecidos
-por la enfermedad. El análisis de interacción muestra efectos complejos entre los factores y los resultados sugieren 
-estrategias de salud pública localizadas basadas en los impulsores específicos de cada ciudad. 
-En resumen, el estudio aplica análisis espacial para caracterizar la heterogeneidad en la propagación de COVID-19 e 
+por la enfermedad. El análisis de interacción muestra efectos complejos entre los factores y los resultados sugieren
+estrategias de salud pública localizadas basadas en los impulsores específicos de cada ciudad.
+En resumen, el estudio aplica análisis espacial para caracterizar la heterogeneidad en la propagación de COVID-19 e
 informar respuestas pandémicas adaptadas.
 
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=10cm]{images/spatial-heterogenity-factos-weiwei.png}%
+		\caption{Factores que influyen en la propagación y fallecimientos y cómo se relacionan los factores entre sí.}
+\end{figure}
+
 \section{Conclusiones}
-Este reporte ha presentado una introducción a la Biomatemática y el uso de modelos para representar la 
-heterogeneidad espacial en sistemas biológicos. Se ha mostrado cómo la inclusión explícita del espacio en 
+
+Este reporte ha presentado una introducción a la Biomatemática y el uso de modelos para representar la
+heterogeneidad espacial en sistemas biológicos. Se ha mostrado cómo la inclusión explícita del espacio en
 modelos epidemiológicos y ecológicos puede mejorar nuestra comprensión de procesos complejos en el mundo real.
 
-El curso me ha provisto de conocimientos valiosos sobre los principios de la modelación matemática en biología 
-y las técnicas para desarrollar modelos que capturen interacciones espacialmente explícitas. El uso de ejemplos 
+El curso me ha provisto de conocimientos valiosos sobre los principios de la modelación matemática en biología
+y las técnicas para desarrollar modelos que capturen interacciones espacialmente explícitas. El uso de ejemplos
 y aplicaciones a problemas actuales ha facilitado la comprensión de los conceptos teóricos.
 
-Entre los principales aprendizajes se encuentran: los enfoques para representar espacialmente sistemas biológicos, 
-el esquema de modelado presentado, y ejemplos de modelos espacialmente explícitos como el SIR con movimiento y 
-modelos en redes. Estas herramientas me permitirán construir modelos más realistas de fenómenos ecológicos y 
+Entre los principales aprendizajes se encuentran: los enfoques para representar espacialmente sistemas biológicos,
+el esquema de modelado presentado, y ejemplos de modelos espacialmente explícitos como el SIR con movimiento y
+modelos en redes. Estas herramientas me permitirán construir modelos más realistas de fenómenos ecológicos y
 epidemiológicos.
 
 \addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
